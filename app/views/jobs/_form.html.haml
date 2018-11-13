@@ -1,0 +1,9 @@
+= simple_form_for(@job, html: { class: 'form-horizontal'}) do |f|
+	= f.collection_select :category_id, Category.all, :id, :name, {promt: "Choose a category" }, input_html: { class: "dropdown-toggle" }
+	= f.input :Area, label: "Area", input_html: { class: "form-control" }
+	= f.input :Dustbin, label: "Dustbin", input_html: { class: "form-control" }
+	= f.input :Street, label: "Street", input_html: { class: "form-control" }
+	= f.input :Address, label: "Address", input_html: { class: "form-control" }
+	= f.input :Measure, label: "Measure", input_html: { class: "form-control" }
+	%br/
+	= f.button :submit

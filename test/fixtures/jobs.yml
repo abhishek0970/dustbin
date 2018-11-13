@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Area: MyString
+  Dustbin: MyString
+  Street: MyText
+  Address: MyString
+  Measure: MyString
+
+two:
+  Area: MyString
+  Dustbin: MyString
+  Street: MyText
+  Address: MyString
+  Measure: MyString

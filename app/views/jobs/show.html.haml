@@ -1,0 +1,14 @@
+#jobs
+	.job
+		%h2= @job.Area
+		%p= @job.Dustbin
+		%p= @job.Street
+		%p= @job.Address
+		%button.btn.btn-default= link_to "Address", @job.Address
+		%button.btn.btn-default= link_to "Measure", @job.Measure
+
+
+#links
+	= link_to "Back", root_path, class: "btn btn-sm btn-default"
+	= link_to "Edit", edit_job_path(@job), class: "btn btn-sm btn-default"
+	= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-sm btn-default"
